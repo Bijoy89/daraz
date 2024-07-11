@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/home1">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.darazinternassignment2.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.darazinternassignment2.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.darazinternassignment2.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <activity
+        android:id="@+id/mainActivity0"
+        android:name="com.example.darazinternassignment2.MainActivity"
+        android:label="splash0"
+        tools:layout="@layout/splash0" />
+  <!--  <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.example.darazinternassignment2.MainActivity2"
+        android:label="splash1"
+        tools:layout="@layout/splash1" />-->
+
+
+    <fragment
+        android:id="@+id/gallery2"
+        android:name="com.example.darazinternassignment2.daraz.gallery2"
+        android:label="gallery2"
+        tools:layout="@layout/gallery2" >
+        <action
+            android:id="@+id/action_gallery2_to_home"
+            app:destination="@id/home1" />
+    </fragment>
+    <fragment
+        android:id="@+id/slideshow"
+        android:name="com.example.darazinternassignment2.daraz.slideshow"
+        android:label="slideshow"
+        tools:layout="@layout/slideshow" >
+        <action
+            android:id="@+id/action_slideshow_to_home"
+            app:destination="@id/home1" />
+    </fragment>
+    <fragment
+        android:id="@+id/registration"
+        android:name="com.example.darazinternassignment2.daraz.Registration"
+        android:label="registration"
+        tools:layout="@layout/registration" />
+    <fragment
+        android:id="@+id/home1"
+        android:name="com.example.darazinternassignment2.daraz.Home"
+        android:label="home"
+        tools:layout="@layout/home" />
+</navigation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home1"
+        android:icon="@drawable/home2"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/gallery2"
+        android:icon="@android:drawable/stat_notify_chat"
+        android:title="Messeges" />
+
+    <item
+        android:id="@+id/slideshow"
+        android:icon="@drawable/cart_foreground"
+        android:title="Cart" />
+    <item
+        android:id="@+id/registration"
+        android:icon="@drawable/account"
+        android:title="Account" />
+</menu>
